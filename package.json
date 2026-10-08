@@ -1,0 +1,32 @@
+{
+  "name": "local-lof-backend",
+  "version": "1.0.0",
+  "description": "离线二维 LOF 局部离群分数与并列邻域核验后端",
+  "type": "module",
+  "main": "dist/server.js",
+  "bin": {
+    "lof-cli": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "start": "node dist/server.js",
+    "dev": "node --experimental-strip-types src/server.ts",
+    "demo": "node dist/cli.js demo"
+  },
+  "keywords": [
+    "lof",
+    "outlier",
+    "sqlite",
+    "typescript"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.9.0",
+    "vitest": "^4.0.0"
+  }
+}
