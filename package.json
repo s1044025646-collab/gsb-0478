@@ -1,0 +1,17 @@
+{
+  "name": "lof2d-backend",
+  "version": "1.0.0",
+  "description": "Local 2D LOF (Local Outlier Factor) analysis backend: API + CLI, TypeScript/Node.js/SQLite",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "start": "npm run build && node dist/src/cli.js serve",
+    "demo": "npm run build && node dist/src/cli.js demo"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "typescript": "*"
+  }
+}
